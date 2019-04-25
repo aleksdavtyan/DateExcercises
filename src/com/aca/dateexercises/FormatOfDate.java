@@ -1,11 +1,9 @@
 package com.aca.dateexercises;
 
-import java.time.Duration;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
+import java.time.Period;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
-import java.time.temporal.ChronoUnit;
 
 public class FormatOfDate {
 
@@ -44,15 +42,11 @@ public class FormatOfDate {
             System.out.println("Please enter valid date in exact format.");
         }
         if (!this.localDate.equals(null)) {
-            LocalDate fromTemp = LocalDate.from(this.localDate);
-            long years = fromTemp.until(today, ChronoUnit.YEARS);
-            fromTemp = fromTemp.plusYears(years);
 
-            long months = fromTemp.until(today, ChronoUnit.MONTHS);
-            fromTemp = fromTemp.plusMonths(months);
+            Period intervalPeriod = Period.between(today, this.localDate);
 
-            long days = fromTemp.until(today, ChronoUnit.DAYS);
-            System.out.printf("Difference between now and that date is %s years, %s months, %s days, " + years, months, days);
+            System.out.printf("Difference between now and that date is %s years, %s months, %s days, ",
+                    intervalPeriod.getYears(), intervalPeriod.getMonths(), intervalPeriod.getDays());
         }
     }
 }
