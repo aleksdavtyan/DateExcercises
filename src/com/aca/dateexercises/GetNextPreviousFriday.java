@@ -9,7 +9,7 @@ import java.time.temporal.TemporalAdjusters;
 public class GetNextPreviousFriday {
 
     private LocalDate localDate = null;
-    private static DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+    static final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
     public LocalDate getNextFriday(String date) {
         try {
