@@ -1,6 +1,6 @@
-package com.aca.dateexercises;
+package com.aca.date.ex4;
 
-import java.time.Duration;
+import com.aca.date.InputReader;
 
 public class Main4 {
 

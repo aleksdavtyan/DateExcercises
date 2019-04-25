@@ -1,5 +1,7 @@
-package com.aca.dateexercises;
+package com.aca.date.ex1;
 
+
+import com.aca.date.InputReader;
 
 import java.text.ParseException;
 

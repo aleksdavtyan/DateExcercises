@@ -1,4 +1,4 @@
-package com.aca.dateexercises;
+package com.aca.date.ex2;
 
 import java.time.DayOfWeek;
 import java.time.LocalDate;
@@ -9,11 +9,11 @@ import java.time.temporal.TemporalAdjusters;
 public class GetNextPreviousFriday {
 
     private LocalDate localDate = null;
-    static final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+    static final DateTimeFormatter FORMATTER = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
     public LocalDate getNextFriday(String date) {
         try {
-            this.localDate = LocalDate.parse(date, formatter);
+            this.localDate = LocalDate.parse(date, FORMATTER);
         } catch (DateTimeParseException e) {
             System.out.println("Please enter valid date format. This is the format: dd/MM/yyyy");
         }
@@ -22,7 +22,7 @@ public class GetNextPreviousFriday {
 
     public LocalDate getPreviousFriday(String date) {
         try {
-            this.localDate = LocalDate.parse(date, formatter);
+            this.localDate = LocalDate.parse(date, FORMATTER);
         } catch (DateTimeParseException e) {
             System.out.println("Please enter valid date format. This is the format: dd/MM/yyyy");
         }

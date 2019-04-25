@@ -1,4 +1,6 @@
-package com.aca.dateexercises;
+package com.aca.date.ex3;
+
+import com.aca.date.InputReader;
 
 public class Main3 {
     public static void main(String[] args) {

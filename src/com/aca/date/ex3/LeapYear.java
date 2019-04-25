@@ -1,4 +1,4 @@
-package com.aca.dateexercises;
+package com.aca.date.ex3;
 
 public class LeapYear {
 

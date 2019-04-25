@@ -1,4 +1,4 @@
-package com.aca.dateexercises;
+package com.aca.date;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
